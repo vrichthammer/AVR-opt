@@ -20,7 +20,7 @@ public class DoubleRangeTest {
 
 	@Test(expected = AssertionError.class)
 	public void doubleRangeInfeasibleTest() {
-		DoubleRange range = new DoubleRange(1.0, 0.0);
+		new DoubleRange(1.0, 0.0);
 	}
 
 	@Test(expected = AssertionError.class)
@@ -34,5 +34,4 @@ public class DoubleRangeTest {
 		DoubleRange range = new DoubleRange(0.0, 1.0);
 		range.setLower(2.0);
 	}
-
 }

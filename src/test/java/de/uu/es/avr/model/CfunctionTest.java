@@ -33,31 +33,30 @@ public class CfunctionTest {
 
 	@Test(expected = AssertionError.class)
 	public void infeasibleSetupTest() {
-		C c = new C(null, null);
+		new C(null, null);
 	}
 
 	@Test(expected = AssertionError.class)
 	public void infeasibleCSetupTest() {
-		C c = new C(null, boundaries);
+		new C(null, boundaries);
 	}
 
 	@Test(expected = AssertionError.class)
 	public void infeasibleBoundSetupTest() {
-		C c = new C(cs, null);
+		new C(cs, null);
 	}
 
 	@Test(expected = AssertionError.class)
 	public void infeasibleSizeSetupTest() {
 
 		double[] bounds = new double[0];
-		C c = new C(cs, bounds);
+		new C(cs, bounds);
 	}
 
 	@Test(expected = AssertionError.class)
 	public void incompatibleSizesTest() {
 
 		double[] bounds = new double[2];
-		C c = new C(cs, bounds);
+		new C(cs, bounds);
 	}
-
 }
