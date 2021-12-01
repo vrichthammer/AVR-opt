@@ -54,7 +54,6 @@ public class AbstractAvrDoubleDecoderCorrectingTest {
 		AvrDoubleCreator creator = new AvrDoubleCreator(problem, random, searchSpaceSize);
 		AvrCorrMeanDecoder decoder = new AvrCorrMeanDecoder(problem);
 
-		int testIndex = 0;
 		CompositeGenotype<String, Genotype> genotype = creator.create();
 		problem.getTask(1).setOmega(523);
 
