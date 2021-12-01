@@ -1,0 +1,40 @@
+plugins {
+    id 'java-library'    
+}
+
+apply plugin: 'maven'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+apply plugin: 'jacoco'
+
+mainClassName = 'org.opt4j.core.start.Opt4J'
+
+group 'avr'
+
+version = 'SNAPSHOT-' + new Date().format("yyyyMMdd")
+
+repositories {
+    mavenCentral()
+	mavenLocal()
+	maven {
+		name "jitpack"
+		url 'https://jitpack.io' 
+	}
+}
+
+dependencies {
+    // opt4j
+	implementation 'com.github.SDARG.opt4j:opt4j-core:-SNAPSHOT'
+	implementation 'com.github.SDARG.opt4j:opt4j-satdecoding:-SNAPSHOT'
+	implementation 'com.github.SDARG.opt4j:opt4j-optimizers:-SNAPSHOT'
+	implementation 'com.github.SDARG.opt4j:opt4j-viewer:-SNAPSHOT'
+	
+	// xml import
+	implementation group: 'xom',	name: 'xom', 		version: '1.2.5'
+
+	// testing
+	testImplementation 'junit:junit:4.12'
+	testImplementation group: 'org.mockito', name: 'mockito-core', version: '2.22.0'
+}
+
+

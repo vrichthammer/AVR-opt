@@ -1,0 +1,10 @@
+/.gradle/
+bin
+build
+launch
+
+# Eclipse files created with `gradlew eclipse`
+.classpath
+.project
+.settings
+**/.DS_Store

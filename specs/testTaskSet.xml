@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE taskset SYSTEM "AVR_EA.dtd"> -->
+<taskset name="exampleTS">
+	<task id="task1">
+			<phi name="phi1" type="DOUBLE" value="0"/>
+			<c id="c1" type="STRING" value="15|13|12|6"/>
+		  <boundaries id="omegas1" type="STRING" value="104|209|314|418|523"/>
+	</task>
+	<task id="task2">
+			<phi name="phi2" type="DOUBLE" value="1"/>
+			<c id="c2" type="STRING" value="10|9|8"/>
+		  <boundaries id="omegas2" type="STRING" value="209|314|418|523"/>
+	</task>
+</taskset>
