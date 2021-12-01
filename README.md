@@ -1,2 +1,3 @@
 # AVR-opt
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6370074ae4c340e3a4c1c5c89f70d62a)](https://app.codacy.com/gh/vrichthammer/AVR-opt?utm_source=github.com&utm_medium=referral&utm_content=vrichthammer/AVR-opt&utm_campaign=Badge_Grade_Settings)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/425e87412d9644fe8ea52ef68d7ee4cb)](https://app.codacy.com/gh/vrichthammer/AVR-opt?utm_source=github.com&utm_medium=referral&utm_content=vrichthammer/AVR-opt&utm_campaign=Badge_Grade_Settings)
