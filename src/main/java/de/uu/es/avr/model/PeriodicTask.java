@@ -13,6 +13,9 @@ public class PeriodicTask extends Task {
 	private final double period;
 	private final double deadline;
 
+	// determined during decoding for each event
+	private double releaseTime;
+
 	/**
 	 * Creates a periodic {@link Task} with an {@code executionTime, period} and
 	 * {@link deadline}.
@@ -69,5 +72,24 @@ public class PeriodicTask extends Task {
 	 */
 	public double getDeadline() {
 		return this.deadline;
+	}
+
+	/**
+	 * Sets the release time of an event (instance of the {@link PeriodicTask}).
+	 * 
+	 * @return the period
+	 */
+	public void setReleaseTime(double releaseTime) {
+		this.releaseTime = releaseTime;
+	}
+
+	/**
+	 * Returns the release time of an event (instance of the
+	 * {@link PeriodicTask}).
+	 * 
+	 * @return the period
+	 */
+	public double getReleaseTime() {
+		return this.releaseTime;
 	}
 }
